@@ -1,0 +1,5 @@
+Construa o Modelo Entidade Relacionamento considerando o seguinte cenário:
+
+- Uma empresa possui vários veículos
+- Um veículo possui marca(gm, ford, fiat), modelo(onix, fiesta, argo) e placa
+- Um cliente (cpf, nome) aluga um ou mais veículos
