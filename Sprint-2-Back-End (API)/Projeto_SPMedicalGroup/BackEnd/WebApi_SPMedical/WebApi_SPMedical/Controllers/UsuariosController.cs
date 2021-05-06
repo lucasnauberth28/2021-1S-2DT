@@ -13,13 +13,13 @@ namespace WebApi_SPMedical.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class ClinicasController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
-        private IClinicaRepository _clinicaRepository { get; set; }
+        private IUsuarioRepository _usuarioRepository { get; set; }
 
-        public ClinicasController()
+        public UsuariosController()
         {
-            _clinicaRepository = new ClinicaRepository();
+            _usuarioRepository = new UsuarioRepository();
         }
 
         [HttpGet]
@@ -28,7 +28,7 @@ namespace WebApi_SPMedical.Controllers
 
             try
             {
-                return Ok(_clinicaRepository.Listar());
+                return Ok(_usuarioRepository.Listar());
             }
             catch (Exception ex)
             {
@@ -44,7 +44,7 @@ namespace WebApi_SPMedical.Controllers
         {
             try
             {
-                return Ok(_clinicaRepository.BuscarPorId(id));
+                return Ok(_usuarioRepository.BuscarPorId(id));
             }
             catch (Exception ex)
             {
@@ -54,12 +54,12 @@ namespace WebApi_SPMedical.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(Clinica novaClinica)
+        public IActionResult Post(Usuario novoUsuario)
         {
             try
             {
                 // Faz a chamada para o método
-                _clinicaRepository.Cadastrar(novaClinica);
+                _usuarioRepository.Cadastrar(novoUsuario);
 
                 // Retorna um status code
                 return StatusCode(201);
@@ -71,12 +71,12 @@ namespace WebApi_SPMedical.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, Clinica clinicaAtualizada)
+        public IActionResult Put(int id, Usuario usuarioAtualizado)
         {
             try
             {
                 // Faz a chamada para o método
-                _clinicaRepository.Atualizar(id, clinicaAtualizada);
+                _usuarioRepository.Atualizar(id, usuarioAtualizado);
 
                 // Retorna um status code
                 return StatusCode(204);
@@ -92,7 +92,7 @@ namespace WebApi_SPMedical.Controllers
         {
             try
             {
-                _clinicaRepository.Deletar(id);
+                _usuarioRepository.Deletar(id);
 
                 return StatusCode(204);
             }
@@ -102,6 +102,5 @@ namespace WebApi_SPMedical.Controllers
             }
         }
 
-
-    } 
+    }
 }
