@@ -48,7 +48,7 @@ DROP COLUMN DataAtualizacao
 
 ALTER TABLE Personagem
 ADD DataAtualizacao DATE
-
+ 
 ALTER TABLE Personagem
 DROP COLUMN DataCriacao
 

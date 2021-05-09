@@ -12,7 +12,7 @@ GO
 INSERT INTO Usuario (IdTipoUsuario)
 VALUES 
 	(2, 'ricardo.lemos@spmedicalgroup.com.br', 'ricardo123')
-	,(2, 'roberto.possarle@spmedicalgroup.com.br', 'possarle456')
+	,(2, 'roberto.possarle@spmedicalgroup.com.br', 'ricardo123')
 	,(2, 'helena.souza@spmedicalgroup.com.br', 'helena789')
 	,(3, 'ligia@gmail.com', 'ligia123')
 	,(3, 'alexandre@gmail.com', 'alexandre456')

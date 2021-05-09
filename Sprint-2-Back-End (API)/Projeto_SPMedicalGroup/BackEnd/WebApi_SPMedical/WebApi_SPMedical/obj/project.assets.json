@@ -7534,19 +7534,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\41225670845\\.nuget\\packages\\": {}
+    "C:\\Users\\Saga\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\41225670845\\Desktop\\Senai_1S_2DT\\2021-1S-2DT\\Sprint-2-Back-End (API)\\Projeto_SPMedicalGroup\\BackEnd\\WebApi_SPMedical\\WebApi_SPMedical\\WebApi_SPMedical.csproj",
+      "projectUniqueName": "C:\\Users\\Saga\\Desktop\\2021-1S-2DT\\Sprint-2-Back-End (API)\\Projeto_SPMedicalGroup\\BackEnd\\WebApi_SPMedical\\WebApi_SPMedical\\WebApi_SPMedical.csproj",
       "projectName": "WebApi_SPMedical",
-      "projectPath": "C:\\Users\\41225670845\\Desktop\\Senai_1S_2DT\\2021-1S-2DT\\Sprint-2-Back-End (API)\\Projeto_SPMedicalGroup\\BackEnd\\WebApi_SPMedical\\WebApi_SPMedical\\WebApi_SPMedical.csproj",
-      "packagesPath": "C:\\Users\\41225670845\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\41225670845\\Desktop\\Senai_1S_2DT\\2021-1S-2DT\\Sprint-2-Back-End (API)\\Projeto_SPMedicalGroup\\BackEnd\\WebApi_SPMedical\\WebApi_SPMedical\\obj\\",
+      "projectPath": "C:\\Users\\Saga\\Desktop\\2021-1S-2DT\\Sprint-2-Back-End (API)\\Projeto_SPMedicalGroup\\BackEnd\\WebApi_SPMedical\\WebApi_SPMedical\\WebApi_SPMedical.csproj",
+      "packagesPath": "C:\\Users\\Saga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Saga\\Desktop\\2021-1S-2DT\\Sprint-2-Back-End (API)\\Projeto_SPMedicalGroup\\BackEnd\\WebApi_SPMedical\\WebApi_SPMedical\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\41225670845\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Saga\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7621,7 +7621,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
