@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+:root{
+    --font:'Indie Flower', sans-serif;
+}
+
+h2, h1{
+    display:flex;
+    text-align:center;
+    font-family: var(--font);
+}
+
+#dog1, #dog2, #dog3, #dog4, #dog5{
+    width: 100%;
+    height:500px;
+    background: rgba(0, 255, 21, 0.383);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4, .imagem5{
+    width:550px ;
+    height: 400px;
+}
+
+#botoes{
+    width: 750px;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+#btn{
+    font-family: var(--font);
+    height: 30px;
+    width:180px;
+    font-size: 17px;
+    border:solid black 1.5px;
+    font-weight: bold;
+}
+
