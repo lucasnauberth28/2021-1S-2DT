@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.botoes
+{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.bt1
+{
+  border: 2px solid white;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgb(0, 102, 0);
+  cursor: pointer;
+}
+
+.bt2
+{
+  border: 2px solid white;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgb(129, 0, 0);
+  cursor: pointer;
+}
+
+.bt1:hover{
+  background-color: rgb(6, 70, 6);
+}
+
+.bt2:hover{
+  background-color: rgb(75, 4, 4);
+}
