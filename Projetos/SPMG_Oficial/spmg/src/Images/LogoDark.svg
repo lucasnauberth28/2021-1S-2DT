@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="281" height="87" viewBox="0 0 281 87">
+  <g id="LogoDark" transform="translate(-1315 -1159)">
+    <text id="SPMG" transform="translate(1412 1225)" fill="#3282b8" stroke="#eff8fb" stroke-width="4" font-size="60" font-family="BonvenoCF-Light, BonvenoCF" font-weight="300"><tspan x="0" y="0">SPMG</tspan></text>
+    <g id="LogoLight" transform="translate(-7533 -1230.113)">
+      <g id="Elipse_7" data-name="Elipse 7" transform="translate(8848 2393.113)" fill="#1b262c" stroke="#eff8fb" stroke-width="10">
+        <ellipse cx="40.5" cy="39.5" rx="40.5" ry="39.5" stroke="none"/>
+        <ellipse cx="40.5" cy="39.5" rx="35.5" ry="34.5" fill="none"/>
+      </g>
+      <g id="Cruz" transform="translate(8906.014 2448.764) rotate(180)">
+        <rect id="Retângulo_64" data-name="Retângulo 64" width="8.862" height="33.93" rx="4.431" transform="translate(12.608)" fill="#eff8fb"/>
+        <rect id="Retângulo_65" data-name="Retângulo 65" width="8.862" height="33.93" rx="4.431" transform="matrix(-0.017, 1, -1, -0.017, 34.079, 12.83)" fill="#eff8fb"/>
+      </g>
+    </g>
+  </g>
+</svg>
