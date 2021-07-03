@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-NotFound">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="NotFound" clip-path="url(#clip-NotFound)">
+    <rect width="1920" height="1080" fill="#eff8fb"/>
+    <text id="NotFound_-_404" data-name="NotFound - 404" transform="translate(318.5 597.5)" fill="#3282b8" stroke="#3282b8" stroke-width="2" font-size="154" font-family="BonvenoCF-Light, BonvenoCF" font-weight="300"><tspan x="0" y="0">NotFound - 404</tspan></text>
+    <g id="Cruz" transform="translate(-236 817)">
+      <rect id="Retângulo_34" data-name="Retângulo 34" width="25" height="113" rx="12.5" transform="translate(319 117)" fill="#0f4c75"/>
+      <rect id="Retângulo_35" data-name="Retângulo 35" width="110.502" height="23" rx="11.5" transform="translate(276.919 160.748)" fill="#0f4c75"/>
+    </g>
+    <g id="Cruz-2" data-name="Cruz" transform="translate(1065 -77.958)">
+      <rect id="Retângulo_34-2" data-name="Retângulo 34" width="53" height="243" rx="20" transform="translate(368 116.958)" fill="#0f4c75"/>
+      <rect id="Retângulo_35-2" data-name="Retângulo 35" width="237.506" height="49.435" rx="20" transform="translate(276.919 211.111)" fill="#0f4c75"/>
+    </g>
+    <g id="Cruz-3" data-name="Cruz" transform="translate(1378.985 541.06)">
+      <rect id="Retângulo_34-3" data-name="Retângulo 34" width="18.971" height="86.982" rx="9.486" transform="translate(309.522 116.958)" fill="#0f4c75"/>
+      <rect id="Retângulo_35-3" data-name="Retângulo 35" width="85.015" height="17.695" rx="8.848" transform="translate(276.919 150.66)" fill="#0f4c75"/>
+    </g>
+    <g id="Cruz-4" data-name="Cruz" transform="translate(1464 817)">
+      <rect id="Retângulo_34-4" data-name="Retângulo 34" width="25" height="113" rx="12.5" transform="translate(319 117)" fill="#00e0ff"/>
+      <rect id="Retângulo_35-4" data-name="Retângulo 35" width="110.502" height="23" rx="11.5" transform="translate(276.919 160.748)" fill="#00e0ff"/>
+    </g>
+    <g id="Cruz-5" data-name="Cruz" transform="translate(-236 -78)">
+      <rect id="Retângulo_34-5" data-name="Retângulo 34" width="65.265" height="295" rx="20" transform="translate(386.776 117)" fill="#3282b8"/>
+      <rect id="Retângulo_35-5" data-name="Retângulo 35" width="288.478" height="60.044" rx="20" transform="translate(276.919 231.209)" fill="#3282b8"/>
+    </g>
+    <g id="Cruz-6" data-name="Cruz" transform="translate(1440.531 -78)">
+      <rect id="Retângulo_34-6" data-name="Retângulo 34" width="35.619" height="161" rx="17.81" transform="translate(336.875 117)" fill="#3282b8"/>
+      <rect id="Retângulo_35-6" data-name="Retângulo 35" width="157.44" height="32.77" rx="16.385" transform="translate(276.919 179.331)" fill="#3282b8"/>
+    </g>
+    <g id="Cruz-7" data-name="Cruz" transform="translate(-144.384 369.187)">
+      <rect id="Retângulo_34-7" data-name="Retângulo 34" width="23.811" height="107.626" rx="11.906" transform="translate(316.999 117)" fill="#3282b8"/>
+      <rect id="Retângulo_35-7" data-name="Retângulo 35" width="105.247" height="21.906" rx="10.953" transform="translate(276.919 158.667)" fill="#3282b8"/>
+    </g>
+    <g id="Cruz-8" data-name="Cruz" transform="translate(41.581 735)">
+      <rect id="Retângulo_34-8" data-name="Retângulo 34" width="35.098" height="158.644" rx="17.549" transform="translate(335.998 117)" fill="#00e0ff"/>
+      <rect id="Retângulo_35-8" data-name="Retângulo 35" width="155.136" height="32.29" rx="16.145" transform="translate(276.919 178.419)" fill="#00e0ff"/>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { parseJwt, usuarioAutenticado } from '../../services/auth';
 
 import '../../assets/Login.css';
 
@@ -11,13 +12,14 @@ class Login extends Component{
         super(props);
         this.state = {
             email : '',
-            senha : ''
+            senha : '',
+            erroMensagem : '',
+            isLoading : false
         }
     };
 
-    fazerLogin = (evento) => {
-        evento.preventDefault();
-
+    fazerLogin = (event) => {
+        event.preventDefault();
         this.setState({ erroMensagem : '', isLoading : true});
 
         axios.post('http://localhost:5000/api/login', {
@@ -25,11 +27,49 @@ class Login extends Component{
             senha : this.state.senha
 
         })
+        
+        .then(resposta => {
+        if (resposta.status === 200) {
+            localStorage.setItem('usuario-login', resposta.data.token);
+            console.log('Meu token é:' + resposta.data.token);
+            this.setState({ isLoading : false})
+
+            let base64 = localStorage.getItem('usuario-login').split('.')[1];
+            console.log(base64);
+            console.log(window.atob(base64));
+
+            console.log(JSON.parse(window.atob(base64)));
+                      
+            console.log(parseJwt().role);
+
+            if(parseJwt().role === '1') {
+                this.props.history.push('/consultas/administrador');
+                console.log("estou logado: "+ usuarioAutenticado());
+
+            }
+            else if(parseJwt().role === "2")
+              {
+                console.log('estou logado: ' + usuarioAutenticado());
+                this.props.history.push('/consultas/medico')
+
+            }else if(parseJwt().role === "3")
+              {
+                console.log('estou logado: ' + usuarioAutenticado());
+                this.props.history.push('/consultas/paciente')
+
+            }
+        }})
+
+        .catch(() => {
+            this.setState({ erroMensagem : 'E-mail ou senha inválidos! Tente novamente.', isLoading : false});
+        })
     }
 
+    
     atualizaCampoLogin = (campo) => {
         this.setState({ [campo.target.name] : campo.target.value })
     };
+
 
     render(){
         return(
@@ -39,7 +79,7 @@ class Login extends Component{
                         <img src= {Medico} alt="Logo SPMG" id="foto"/>
                     </div>
                     <div id="login">
-                        <form action="submit" id="form-login" >
+                        <form action="submit" id="form-login" onSubmit={this.fazerLogin} >
                             <h2>Login</h2>
                             <input type="email" 
                             name="email" 
@@ -57,7 +97,9 @@ class Login extends Component{
                             onChange={this.atualizaCampoLogin}>
                             </input>
 
-                            <input type="button" value="Entrar" id="btn"></input>
+                            <p style={{ color : '#C1313A'}}>{this.state.erroMensagem}</p>
+
+                            <input type="submit" value="Entrar" id="btn-login"></input>
                             <img src= {Logo} alt="Logo SPMG"/>
                         </form>
                     </div>
@@ -66,6 +108,4 @@ class Login extends Component{
         )
     }
 }
-
 export default Login;
-  

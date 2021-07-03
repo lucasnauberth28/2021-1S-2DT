@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class CadastroCons extends Component{
+class notfound extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -11,6 +11,11 @@ class CadastroCons extends Component{
         }
     };
 
-
+    render(){
+        return( 
+            <div> notfound lol</div>
+        )
+    }
 }
-export default CadastroCons;
+
+export default notfound;
