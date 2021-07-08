@@ -13,7 +13,7 @@ class notfound extends Component{
 
     render(){
         return( 
-            <div> notfound lol</div>
+            <div>NOT FOUND</div>
         )
     }
 }

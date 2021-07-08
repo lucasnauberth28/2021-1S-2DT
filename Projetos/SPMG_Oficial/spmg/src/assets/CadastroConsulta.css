@@ -1,0 +1,58 @@
+:root{
+    --pag-bg: #EFF8FB;
+    --tex-light: #3282B8;
+    --tex-darking:#0F4C75;
+    --tex-h4:#0F4C75;
+    --btn-med:#0F4C75;
+    --btn-hover:#EFF8FB;
+    --cancel-btn:#FB3640;
+    --tex-cancel-btn:#3282B8;
+    --font: 'bonvenocf'
+}
+
+.dark-mode:root{
+    --pag-bg:#1B262C;
+    --tex-light:#EFF8FB;
+    --tex-darking:#3282B8;
+    --tex-h4:#EFF8FB;
+    --btn-hover:#EFF8FB;
+    --btn-med:#1B262C;
+    --cancel-btn:#FB3640;
+    --tex-cancel-btn:#1B262C;
+}
+
+#cadastro-consultas{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 2rem;
+    width:calc(100% - 2rem);
+    height:cover;
+    overflow-y: auto;}
+
+#cad-consulta{
+    width: 50%;
+    height:180px;
+    border-radius: 30px;
+    border: 2px solid var(--tex-darking);
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-cad-con{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--btn-hover);
+    width: 200px;
+    height: 50px;
+    border: solid 2px var(--tex-light);
+    border-radius: 15px;
+    color: var(--tex-cancel-btn);
+    font-family: var(--font);
+    margin-left:6rem;
+    font-size: 1rem;
+}

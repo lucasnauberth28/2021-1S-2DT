@@ -1,0 +1,273 @@
+@import url('http://fonts.cdnfonts.com/css/bonvenocf');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--pag-bg);
+}
+
+:root{
+    --pag-bg: #EFF8FB;
+    --tex-light: #3282B8;
+    --tex-darking:#0F4C75;
+    --tex-h4:#0F4C75;
+    --font: 'bonvenocf'
+}
+
+.dark-mode:root{
+    --pag-bg:#1B262C;
+    --tex-light:#EFF8FB;
+    --tex-darking:#3282B8;
+    --tex-h4:#EFF8FB;
+}
+
+i{
+    color: var(--tex-light);
+}
+
+    /* Início do Header */
+
+a{
+    color: var(--tex-light);
+    text-decoration: none;
+    font-family: var(--font);
+}
+
+#header{
+    height: 70px;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+}
+
+#menu{
+    display: block;
+    list-style:none;
+    gap: .5rem;
+    position: absolute;
+    width: 550px;
+    height: 0;
+    transition: .6s;
+    top: 70px;
+    background-color: var(--pag-bg);
+    z-index: 9999;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#menu a{
+    font-size: 20px;
+    padding: 0;
+    margin:1rem ;
+}
+
+#menu a:hover{
+    border-bottom: 1px solid var(--tex-light);
+}
+
+#btn{
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#nav.active #menu{
+    display: block;
+    height: calc(100vh - 70px);
+    visibility: visible;
+}
+
+#hamburger{
+    width: 20px;
+    border-top:3px solid;
+    color: var(--tex-light);
+}
+
+#hamburger::after, #hamburger::before{
+    content: '';
+    position: relative;
+    right: 5px;
+    display: block;
+    width: 20px;
+    height:3px;
+    background-color: currentColor;
+    margin:5px;
+    transition: .2s;
+}
+
+#nav.active #hamburger{
+    border-top: transparent;
+}
+
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+/* Fim do Header */
+
+/* Inicio main : Título */
+
+#textos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding:1rem 0;
+    width:calc(100% - 2rem);
+    height: 100px;
+}
+
+#textos h2{
+    color: var(--tex-light);
+    font-family:var(--font) ;
+}
+
+#textos h4{
+    height: 2px;
+    width: 130px;
+    background-color: var(--tex-darking);
+}
+
+#textos p{
+    color: var(--tex-h4);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Fim do Título  */
+
+/* Consulta */
+
+#consultas{
+    list-style: none;
+    margin: 0 2rem;
+    width:calc(100% - 2rem);
+    height:cover;
+    overflow-y: auto;
+}
+
+#consulta{
+    width: calc(100% - 32px);
+    height:180px;
+    border-radius: 30px;
+    border: 2px solid var(--tex-darking);
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#descricao{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    padding: 0 1rem;
+}
+
+#list-consulta{
+    width: 60%;
+    padding: 1rem ;
+    gap: .5rem;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+/* Consulta terminado */
+
+#logoDark{
+    display: none;
+}
+
+.dark-mode #logoDark{
+    display: block;
+}
+
+.dark-mode #logo{
+    display: none;
+}
+
+.label{
+    display: flex;
+    border-radius: 50px;
+    background-color: #111;
+    height: 26px;
+    width:50px;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    margin-left: 1rem;
+    
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+.ball{
+    background-color: #fff;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    left: 26px;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+}
+
+#modes{
+    padding-top: .5rem;
+}
+
+#switch{
+    
+    opacity: 0;
+    position: absolute;
+}
+
+#switch:checked + .label .ball{
+    transform: translateX(-24px);
+}
+
+.fa-user, .fa-briefcase-medical, .fa-clock, .fa-calendar-day, .fa-comment-alt{
+    padding: 0.5rem;
+}
+
+
+#logoDark{
+    width: 100px;
+    padding-right:1rem;
+    display: none;
+}
+
+.dark-mode #logoDark{
+    display: block;
+}
+
+.dark-mode #logo{
+    display: none;
+}
+
+#logo{
+    padding-right: 1rem;
+    width: 100px;
+}

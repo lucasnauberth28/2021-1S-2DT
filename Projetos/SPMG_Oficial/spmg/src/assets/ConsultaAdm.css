@@ -178,12 +178,19 @@ a{
     align-items: center;
 }
 
-#descricao{
+#desc{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 40%;
     height: 80%;
-    padding: 0 1rem;
     border-left: solid 1.5px var(--tex-darking);
+}
+
+#descricao{
+    height: 100px;
+    width: auto;
+    padding: 0 1rem;
 }
 
 #list-consulta{
@@ -290,35 +297,49 @@ a{
 }
 
 #cancel-btn{
-    display: flex;
     align-items: center;
-    justify-content:center;
-    gap: .3rem;
+    justify-content:space-around;
     text-align: center;
+    margin-left: 24rem;
     border-radius: 15px;
-    color: var(--tex-cancel-btn);
+    color:var(--pag-bg);
     font-size: .7rem;
     font-family: var(--font);
-    background-color: var(--btn-hover);
-    width: 75px;
+    background-color: var(--tex-light);
+    width: 80px; display: flex;
     height: 25px;
     cursor: pointer;
-    border: 2px solid var(--tex-light);
-    position: relative;
-    left: 14rem;
-    top: 8rem;
-    transition:.3s;
+    border: 2px solid var(--btn-hover);
+    transition: 0.3s;
+ 
 }
 
 #cancel-btn:hover{
-    width: 100px;
-    background-color: var(--cancel-btn);
-    border: var(--cancel-btn);
-    color: var(--btn-hover);
-    
-
+    width: 80px;
+    background-color:var(--btn-med);
+    border:var(--btn-hover);
+    color: solid 2px var(--pag-bg);
 }
 
 #cancel{
     color:var(--btn-hover);
+}
+
+#logoDark{
+    width: 100px;
+    padding-right:1rem;
+    display: none;
+}
+
+.dark-mode #logoDark{
+    display: block;
+}
+
+.dark-mode #logo{
+    display: none;
+}
+
+#logo{
+    padding-right: 1rem;
+    width: 100px;
 }
